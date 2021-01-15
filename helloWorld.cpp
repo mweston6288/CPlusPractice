@@ -4,7 +4,8 @@
 using namespace std;
 
 int main(){
-	cout << "Hello World!"; // Does not include newline break
+	cout << "Hello World!\n"; // same newline as C
+	cout << "Hello World!" << endl; // alternate way to make newline
 	/*
 	without using namespace std;
 	std::cout << "Hello World!";

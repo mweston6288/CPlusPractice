@@ -26,7 +26,7 @@ int main(){
 			cout << "Sunday";
 	}
 	cout << "\n";
-	
+
 	int i = 0;
 	while (i < 5){
 		cout << i++ <<"\n";//i++ still works in cout
@@ -35,4 +35,8 @@ int main(){
 	do{
 		cout << i--<<"\n";
 	}while(i > 0);
+
+	for (i = 1; i < 5; i *=2){
+		cout << i <<"\n";
+	}
 }

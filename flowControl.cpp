@@ -25,4 +25,14 @@ int main(){
 		default:
 			cout << "Sunday";
 	}
+	cout << "\n";
+	
+	int i = 0;
+	while (i < 5){
+		cout << i++ <<"\n";//i++ still works in cout
+	}
+
+	do{
+		cout << i--<<"\n";
+	}while(i > 0);
 }

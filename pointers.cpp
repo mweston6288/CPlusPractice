@@ -20,4 +20,11 @@ int main(){
 
 	// When not declaring a variable, & refers to the variable's memory address
 	cout << &meal<<"\n";
+
+	// pointers store memory addresses
+	int *z = &x;
+	cout << z<<endl;
+	cout << *z << endl; // dereference
+	*z = 83; // changes the value of whatever z was pointing to
+	cout << x << endl;
 }

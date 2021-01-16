@@ -29,11 +29,19 @@ int main(){
 
 	int i = 0;
 	while (i < 5){
-		cout << i++ <<"\n";//i++ still works in cout
+		i++;
+		if (i == 3){
+			break;
+		}
+		cout << i <<"\n";//i++ still works in cout
 	}
 
 	do{
-		cout << i--<<"\n";
+		i--;
+		if (i % 2 == 0){
+			continue;
+		}
+		cout << i<<"\n";
 	}while(i > 0);
 
 	for (i = 1; i < 5; i *=2){

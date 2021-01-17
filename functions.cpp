@@ -6,6 +6,13 @@ void function2(); // function signature
 void function(){
 	cout <<"Entered function\n";
 }
+// Can use the same function name with different parameters
+void function(int x){
+	cout << "Entered function\n";
+}
+void function (string x){
+	cout << "Entered function\n";
+}
 // parameters can have a default value if none is passed in
 // C++ does not skip over the default if there are more parameters
 void printName(string x = "No one"){
@@ -22,6 +29,8 @@ void swapNum(int &x, int &y){
 }
 int main(){
 	function();
+	function(5);
+	function("hello");
 	function2();
 	printName();
 	printName("Larry");

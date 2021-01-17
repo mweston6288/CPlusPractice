@@ -6,13 +6,14 @@ void function2(); // function signature
 void function(){
 	cout <<"Entered function\n";
 }
-
-void printName(string x){
+// parameters can have a default value if none is passed in
+void printName(string x = "No one"){
 	cout << x<<"\n";
 }
 int main(){
 	function();
 	function2();
+	printName();
 	printName("Larry");
 }
 

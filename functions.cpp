@@ -21,6 +21,10 @@ void printName(string x = "No one"){
 int add(int x, int y){
 	return x+y;
 }
+// different return values is not a function overload. Overload requires different parameters
+double add(double x, double y){
+	return x+y;
+}
 // pass-by-reference uses reference values rather than pointers
 void swapNum(int &x, int &y){
 	int z = x;

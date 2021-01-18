@@ -9,18 +9,20 @@ class MyClass{ //declare class like in java
 			cout << myString<<endl;
 		}
 		void method2(); // object methods can have signatures as well
+		// A constructor
+		MyClass(int x){
+			num = x;
+			myString = "Hello World!";
+		}
 };
 // how to define a method outside the class
 void MyClass::method2(){
-	cout << "Test"<<endl;
+	cout << num<<endl;
 }
 
 int main(){
-	MyClass obj;
-	MyClass obj2;
+	MyClass obj(15);
 
-	obj.num = 15;
-	obj.myString = "Hello World!";
 	obj.method();
 	obj.method2();
 }

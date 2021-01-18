@@ -15,7 +15,7 @@ class MyClass{ //declare class like in java
 			myString = "Hello World!";
 		}
 		void setY(int y){
-			this->y = y;
+			this->y = y; // how to differenciate instance variables and method variables
 		}
 		int getY(){
 			return y;

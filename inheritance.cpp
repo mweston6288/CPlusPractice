@@ -4,9 +4,7 @@ using namespace std;
 class Vehicle{
 	public:
 		string brand = "Ford";
-		void honk(){
-			cout << "Honk!\n";
-		}
+		void honk();
 };
 class MyClass{
 	public:
@@ -15,9 +13,18 @@ class MyClass{
 		}
 };
 // Classes can inherit from multiple classes
-class Car: private Vehicle, public MyClass{
+class Car: public Vehicle, public MyClass{
 	public:
 		string model = "Mustang";
+		// Classes can override parent 
+		void method()
+		{
+			cout << "Entered2\n";
+		}
+		void honk()
+		{
+			cout << "Honk!\n";
+		}
 };
 
 int main(){
@@ -26,3 +33,4 @@ int main(){
 	cout << myCar.brand + " " + myCar.model<<endl;
 	myCar.method();
 }
+// If you set the inheritance to private, all methods and variables inherited become private within the class
